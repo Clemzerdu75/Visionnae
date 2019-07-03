@@ -4,33 +4,43 @@ body {
 	background-color: black;
 }
 
+.content {
+	box-sizing:border-box;
+	width: 100%;
+}
+
+.text {
+	margin-left: 50px;
+	width: 100%;
+	color:grey;
+	text-align : justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
+}
+
+.test1 {
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 3%;
+} 
+
 .test1_title {
 	margin-top: 100px;
 	margin-left: 50px;
-	font-size: 6em;
+	font-size: 6vw;
+	width: 100%;
 	font-style: italic;
 	font-weight: bold;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
 
-.text {
-	margin-left: 50px;
-	width: 600px;
-	color:lightgrey;
-	text-align : justify;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-}
-
-body {
-	background-color: black;
-}
-
 .test2_title {
+	text-align:center;
 	margin-top: 100px;
 	margin-left: 50px;
-	font-size: 6em;
+	font-size: 6vw;
 	font-style: italic;
 	font-weight: bold;
 	color: white;
