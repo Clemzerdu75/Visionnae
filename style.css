@@ -79,6 +79,13 @@ body {
 	margin-right: 5%;
 } 
 
+.anim_3 {
+	position: absolute;
+	margin-left: 53%;
+	margin-top: 45%;
+	width: 40%;
+} 
+
 .test2:hover {
 	animation-name: test;
 	animation-duration: 1.5s;
@@ -90,6 +97,14 @@ body {
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 }
+
+.anim_3:hover {
+	animation-name: test3;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+
 
 @keyframes test {
 	0%{opacity: 1;
@@ -112,6 +127,13 @@ body {
 		filter: blur(0px);}
 }
 
+@keyframes test3 {
+	from {opacity: 0;
+		margin-left: 70%;}
+	to {opacity: 1;
+		margin-left: 53%;}
+}
+
 @media screen and (max-width: 640px) {
 	.test1{
 		width: 90%;
@@ -123,4 +145,11 @@ body {
 		width: 90%;
 		margin-left: 5%;
 	}
+}
+
+.test4_title {
+	background-image: url(https://media.giphy.com/media/fxhEoiBJo7NNXc7ozy/giphy.gif);
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

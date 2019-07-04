@@ -6,7 +6,7 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	</head>
 	<body>
-		<h1 style= "position: absolute; margin-left: 90%; font-size: 2em;" onclick="invert(this)">invert</h1>
+		<h1 style= "position: absolute; margin-left: 90%; font-size: 2em; color: black;" onclick="invert(this)">invert</h1>
 		<script>
 			var state = true;
 			function invert(button) {
@@ -20,6 +20,7 @@
 				if (!state) {
 					document.body.style.backgroundColor = "#f0f0f0";
 					document.body.style.filter = "invert(1)";
+					button.style.color = "black";
 					state = true;
 				}
 			}
@@ -51,23 +52,30 @@
 					</p>
 				</div>
 			</div>
-			<div class="test2">
-				<h1 class="test2_title" style="font-family: 'Montserrat', sans-serif; font-style: normal; text-align: right; padding-left: 30%;" onclick="italic(this)">VISIONAE</h1>
+			<div class="anim_3">
+				<h1 id="anim_3" class="test2_title" style="font-family: 'Montserrat', sans-serif; font-style: normal; text-align: right; padding-left: 30%;" onclick="italic(this)">VISIONAE</h1>
 				<div class="text">
-					<p class="test2_text" style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.3em;"><br>Visionae est une startup de création d’expériences numériques.<br>
+					<p id="anim_4" class="test2_text" style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.3em;"><br>Visionae est une startup de création d’expériences numériques.<br>
 					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant. <br>En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
 					</p>
 				</div>
 			</div>
 		</div>
-		<div style="width: 50%; margin-left: 80px;">
-			<video style=" margin-left: -35px;width: 70%" autoplay>
-				<source src="./comp2.mov" >
-			</video>
-			<br>
-			<video style=" margin-top: -16%; width: 100%" autoplay>
-				<source src="./comp3.mov" >
-			</video>
 		</div>
+		<br>
+		<br>
+		<div class="content" style= "margin-bottom: 100px;">
+			<div class="test" style="position: absolute; margin-top:70%; margin-left: 40px;">
+				<h1 class="test4_title" style=" font-weight: bold; margin-left: 60px; font-family: 'Montserrat', sans-serif; font-style: 900; font-size: 5em; color: white; margin-top: 300px;" onclick="italic(this)">VISIONAE</h1>
+				<div class="text" style="width:50%;">
+					<p class="test4_title" style="font-weight: bold; font-family: 'Montserrat', sans-serif; font-size: 1.3em;"><br>Visionae est une startup de création d’expériences numériques.<br>
+					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant. <br>En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
 	</body>
 </html>
