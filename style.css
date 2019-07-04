@@ -1,8 +1,9 @@
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
 body {
-	background-color: #0f0f0f;
+	background-color: #f0f0f0;
 	margin-left: -50px;
+	filter: invert(1);
 }
 
 .content {
@@ -24,8 +25,6 @@ body {
 	width: 40%;
 	margin-left: 5%;
 	margin-right: 5%;
-	animation-name: test2;
-	animation-duration: 1s;
 } 
 
 .test1_title {
@@ -43,11 +42,29 @@ body {
 	text-align:center;
 	margin-top: 100px;
 	margin-left: 50px;
-	font-size: 6vw;
+	font-size: 6.2vw;
 	font-style: italic;
 	font-weight: bold;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.text2 {
+	margin-left: 50px;
+	width: 100%;
+	color:grey;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
+}
+
+.text3 {
+	margin: 0 auto;
+	margin-left: 20%;
+	width: 70%;
+	text-align : justify;
+	color:grey;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
 }
 
 .test2_text {
@@ -60,21 +77,50 @@ body {
 	width: 40%;
 	margin-left: 5%;
 	margin-right: 5%;
-	animation-name: test;
-	animation-duration: 0.75s;
 } 
 
+.test2:hover {
+	animation-name: test;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out
+}
+
+.test1:hover {
+	animation-name: test2;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
 @keyframes test {
-	from {opacity: 0;
+	0%{opacity: 1;
+		margin-top: 0px;}
+	5% {
+		opacity: 0;
+		margin-top: 10px;
+	}	
+	30% {opacity: 0;
 	margin-top: 50px;}
-	to {opacity: 100;
+	100% {opacity: 1;
 		margin-top: 0px;}
 }
 
 @keyframes test2 {
-	from {opacity: 0;
+	from {opacity: 0.3;
 		filter: blur(10px);
 		margin-top: 0;}
-	to {opacity: 100;
+	to {opacity: 1;
 		filter: blur(0px);}
+}
+
+@media screen and (max-width: 640px) {
+	.test1{
+		width: 90%;
+		margin-left: 5%;
+		font-size: 2em;
+	}
+
+	.test2 {
+		width: 90%;
+		margin-left: 5%;
+	}
 }

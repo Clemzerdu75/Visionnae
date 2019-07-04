@@ -2,10 +2,28 @@
 	<head>
 		<title>VisionnaeR&D</title>
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:400|Roboto+mono|Nunito:700i |Open+Sans:600,800i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400|Roboto+mono|Nunito:700i | Montserrat: 500,900  |Open+Sans:600,800i&display=swap" rel="stylesheet">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	</head>
 	<body>
+		<h1 style= "position: absolute; margin-left: 90%; font-size: 2em;" onclick="invert(this)">invert</h1>
+		<script>
+			var state = true;
+			function invert(button) {
+				if (state) {
+					document.body.style.backgroundColor = "#0f0f0f";
+					document.body.style.filter = "invert(0)";
+					button.style.color = "white";
+					state = false;
+					return;
+				}
+				if (!state) {
+					document.body.style.backgroundColor = "#f0f0f0";
+					document.body.style.filter = "invert(1)";
+					state = true;
+				}
+			}
+		</script>
 		<div class="content">
 			<div class="test1" style="margin-right:0%">
 				<h1 class="test1_title">Visionae</h1>
@@ -17,9 +35,9 @@
 			</div>
 			<div class="test1">
 				<h1 class="test2_title" onclick="italic(this)">VISIONAE</h1>
-				<div class="text">
-					<p class="test2_text">Visionae est une startup de création d’expériences numériques.
-					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant. En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
+				<div class="text3">
+					<p class="test2_text" style="font-style: normal;"><br>Visionae est une <b style="color: white; font-size: 1em;">startup de création d’expériences numériques.</b><br><br>
+					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant.<br> En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
 					</p>
 				</div>
 			</div>
@@ -27,28 +45,28 @@
 		<div class="content">
 			<div class="test2" style="margin-right:0%">
 				<h1 class="test1_title" style="font-family:'Helvetica', sans-serif;" onclick="italic(this)">Visionae</h1>
-				<div class="text">
-					<p class="test1_text"  style="font-family:'Helvetica', sans-serif; line-height: 1.4; font-size: 1.25vw; font-weight: bold;">Visionae est une <b style="color: white; font-size: 1.1em;">startup de création d’expériences numériques</b>.<br>
-						Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée.<br> Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant.<br> En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
+				<div class="text2">
+					<p class="test1_text"  style="font-family:'Helvetica', sans-serif; line-height: 1.5; font-size: 1.7vw; font-weight: bold;"><br>Visionae est une <b style="color: white; font-size: 1.1em;">startup de création <br>d’expériences numériques</b>.<br><br>
+						Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant.<br><br> En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
 					</p>
 				</div>
 			</div>
 			<div class="test2">
-				<h1 class="test2_title" onclick="italic(this)">VISIONAE</h1>
+				<h1 class="test2_title" style="font-family: 'Montserrat', sans-serif; font-style: normal; text-align: right; padding-left: 30%;" onclick="italic(this)">VISIONAE</h1>
 				<div class="text">
-					<p class="test2_text">Visionae est une startup de création d’expériences numériques.
-					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant. En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
+					<p class="test2_text" style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.3em;"><br>Visionae est une startup de création d’expériences numériques.<br>
+					Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée. Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant. <br>En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div style="width: 50%; margin-left: 80px;">
 			<video style=" margin-left: -35px;width: 70%" autoplay>
-				<source src="Comp2.mov" >
+				<source src="./comp2.mov" >
 			</video>
 			<br>
 			<video style=" margin-top: -16%; width: 100%" autoplay>
-				<source src="Comp3.mov" >
+				<source src="./comp3.mov" >
 			</video>
 		</div>
 	</body>
