@@ -39,9 +39,10 @@ body {
 }
 
 .test2_title {
-	text-align:center;
+	text-align: center;
+	left: 0%;
 	margin-top: 100px;
-	margin-left: 50px;
+	margin-left: 10%;
 	font-size: 6.2vw;
 	font-style: italic;
 	font-weight: bold;
@@ -129,26 +130,21 @@ body {
 
 @keyframes test3 {
 	from {opacity: 0;
-		margin-left: 70%;}
+		margin-left: 60%;}
 	to {opacity: 1;
 		margin-left: 53%;}
 }
 
-@media screen and (max-width: 640px) {
-	.test1{
-		width: 90%;
-		margin-left: 5%;
-		font-size: 2em;
-	}
-
-	.test2 {
-		width: 90%;
-		margin-left: 5%;
-	}
-}
 
 .test4_title {
-	background-image: url(https://media.giphy.com/media/fxhEoiBJo7NNXc7ozy/giphy.gif);
+	background-image: url(test.gif);
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.test5_title {
+	background-image: url(https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif);
 	background-size: cover;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
