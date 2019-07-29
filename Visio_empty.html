@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<title>VisionnaeR&D</title>
-		<link href="https://fonts.googleapis.com/css?family=Lato:400|Roboto+mono|Nunito:700i | Oswald: 500,900  |Open+Sans:600,800i&display=swap" rel="stylesheet">
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
         <script src="./parallax/parallax.min.js"></script>
+        <script src="visio.js"></script>
         <link rel="stylesheet" href="visio.css">
 	</head>
 	<body>
@@ -29,41 +31,53 @@
         </div>
 
         <!-- Savoir Faire -->
-        <div style="width: 100%; height: 900px; background: #0f0f0f; left: 0;top: 0;">
-                <h1 class="tl_1" style="margin-top: 50px;">METHODES</h1>
-            <div class='some-page-wrapper'>
-                <div class='row'>
-                  <div class='column'>
-                    <div class='blue-column'>
-                        <img style= "width: 50%; margin-bottom: 10%;"src="V-empty.jpg">
-                        <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Imaginer</h1>
-                       <p style="width: 50%; margin: 0 auto; text-align: left;"> Ensemble, nous conceptualisons vos idées et vos envies, pour une exposition la plus adaptée possible.</p>
+        <div class="content-wrapper">
+                <div class="content">
+                    <h1 class="tl_1" style="margin-top: 50px;">METHODES</h1>
+                    <div class='some-page-wrapper'>
+                        <div class='row'>
+                        <div class='column'>
+                            <div class='blue-column'>
+                                <img style= "width: 50%; margin-bottom: 10%;"src="imaginer.gif">
+                                <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Imaginer</h1>
+                            <p style="width: 50%; margin: 0 auto; text-align: left;"> Ensemble, nous conceptualisons vos idées et vos envies, pour une exposition la plus adaptée possible.</p>
+                            </div>
+                        </div>
+                        <div class='column'>
+                            <div class='green-column'>
+                                <img style= "width: 50%;  margin-bottom: 10%;"src="../V-empty.jpg">
+                                <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Produire</h1>
+                                <p style="width: 50%; margin: 0 auto; text-align: left; ">En collaboration avec les artistes, nous scénarisons et créons des œuvres uniques.</p>
+                            </div>
+                        </div>
+                        <div class='column'>
+                            <div class='orange-column'>
+                                <img style= "width: 50%;  margin-bottom: 10%;"src="../V-empty.jpg">
+                                <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Déployer</h1>
+                            <p style="width: 50%; margin: 0 auto; text-align: left; "> Nous nous occupons de la mise en œuvre technique de l’exposition une fois sur place.</p>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                   </div>
-                  <div class='column'>
-                    <div class='green-column'>
-                        <img style= "width: 50%;  margin-bottom: 10%;"src="V-empty.jpg">
-                        <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Produire</h1>
-                        <p style="width: 50%; margin: 0 auto; text-align: left; ">En collaboration avec les artistes, nous scénarisons et créons des œuvres uniques.</p>
+                <div class="content2">
+                    <div class="little_animation">
+                        <h1 class="tl_2" >OFFRES</h1>
+                        <p class="layer3" style="margin: 0 auto; text-align: justify; width: 50%;color: white; font-size: 1.8vw; font-family: 'Oswald', sans-serif; font-weight: 900;" >Visionae est une startup de création d’expériences numériques.<br>
+                            Nous introduisons des expériences numériques, dans des monuments historiques, grâce à de la réalité augmentée.
+                            Nous avons décidé de travailler avec la technologie de la RA pour mettre en valeur l'existant.
+                            <br>En effet, nous avons conscience que chaque lieu doit garder son âme et ne doit pas se faire submerger par la technologie.
+                        </p>
                     </div>
-                  </div>
-                  <div class='column'>
-                    <div class='orange-column'>
-                        <img style= "width: 50%;  margin-bottom: 10%;"src="V-empty.jpg">
-                        <h1 style="font-size: 2vw; font-weight: 900; width: 50%; margin: 0 auto; text-align: left; margin-bottom: 4%;">Déployer</h1>
-                       <p style="width: 50%; margin: 0 auto; text-align: left; "> Nous nous occupons de la mise en œuvre technique de l’exposition une fois sur place.</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-        </div>
+            </div>
 
         <!-- Break --> 
-        <div class="parallax" data-parallax="scroll" data-position="top" data-speed="0" data-image-src="https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif" style="min-height: 300px;">
+        <div class="parallax" data-parallax="scroll" data-position="top" data-speed="0" data-image-src="https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif" style="max-height: 300px;">
 
         </div>
         <!-- Contact -->
-        <div style="width: 100%; height: 800px; background: #0f0f0f; left: 0;top: 0;">
+        <div class="contact" style="width: 100%; background: #0f0f0f; left: 0;top: 0;">
            <h1 class="tl_1" style="margin-top: 50px;">TEAM</h1>
             <div class='some-page-wrapper'>
                     <div class='row2'>
@@ -106,7 +120,7 @@
             </div>
         </div>
         <!-- Footer -->
-        <div style="width: 100%; height: 30%; background: black; left: 0;top: 0;">
+        <div class="footer" style="width: 100%;  background: black; left: 0;top: 0;">
             <p style="color:white;position: relative;
             top: 50%;
             transform: translateY(-50%);">Copyright 2019 - Visionae</p>

@@ -1,0 +1,21 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background: #f9f9f9;
+	font-size: 24px;
+}
+
+.parallax {
+	width: 100%;
+	height: 2000px;
+    background: transparent;
+}
+
+.info {
+	z-index: 2;
+	position: relative;
+}
+
+#vurtOverlay {
+	height: 100%;
+}

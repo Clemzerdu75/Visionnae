@@ -47,10 +47,28 @@ h1 {
     }
 }
 
+.content {
+	opacity: 0;
+	transition: 1s;
+}
+
+.content.show {
+	opacity: 1;
+	transition: 1s;
+}
+
 .some-page-wrapper {
     display: flex;
-    padding-top: 5%;
+	padding-top: 15%;
+	opacity: 0;
+	transition: 1s;
   }
+  
+  .some-page-wrapper.show {
+	padding-top: 5%;
+	opacity: 1;
+	transition: 1s;
+}
   
   .row {
     text-align: center;
@@ -106,7 +124,8 @@ h1 {
     mix-blend-mode: difference;
     z-index: 30;
     font-size: 7vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 900;
     background-image: url(https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif);
 	background-size: cover;
 	-webkit-background-clip: text;
@@ -160,3 +179,35 @@ p {
 .textWithBlurredBg:hover :not(img){
   opacity:1;
 }
+
+.content-wrapper {
+  width: 100%;
+  background: #0f0f0f;
+  left: 0;
+  top: 0;
+}
+
+.tl_2 {
+  text-align: left;
+  margin-left: 5%;
+  z-index: 30;
+  font-size: 7vw;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 900;
+  background-image: url(https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .content2 {
+  position: absolute;
+  margin-top: -70%;
+  opacity: 0;
+  transition: 1s;
+  }
+
+  .content2.show {
+  opacity: 1;
+  transition: 1s;
+  }
