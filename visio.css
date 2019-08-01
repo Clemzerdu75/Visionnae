@@ -5,10 +5,11 @@ h1 {
   font-size: 2vw;
   font-family: 'Helvetica', sans-serif;
 }
+
 .fade_up {
     color: black;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4em;
     font-family: 'Helvetica', sans-serif;
     font-weight: 900;
     animation-name: fade_up;
@@ -18,15 +19,18 @@ h1 {
 
 .fade_down {
     position: absolute;
+    width: 70%;
     text-align: justify;
     left: 50%;
     transform: translate(-50%, 0);
     bottom: 6%; 
     width: 30%;
-    min-width: 350px;
+    min-width: 500px;
+    font-size: 1.3em;
+
     animation-name: fade_down;
-	animation-duration: 0.75s;
-	animation-timing-function: ease-out; 
+	  animation-duration: 0.75s;
+	  animation-timing-function: ease-out; 
 }
 
 @keyframes fade_up {
@@ -179,7 +183,7 @@ p {
 
   .content2 {
   position: sticky;
-  top: 5%;
+  top: 0;
   opacity: 0;
   transition: 1s;
   margin-bottom: 10%;
@@ -192,7 +196,6 @@ p {
 
   .content {
     position: static;
-   /* top: 5%;*/
     opacity: 0;
     transition: 1s;
   }
