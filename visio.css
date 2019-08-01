@@ -3,13 +3,13 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 
 h1 {
   font-size: 2vw;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 .fade_up {
     color: black;
     text-align: center;
     font-size: 3vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 900;
     animation-name: fade_up;
 	  animation-duration: 1s;
@@ -47,21 +47,14 @@ h1 {
     }
 }
 
-.content {
-	opacity: 0;
-	transition: 1s;
-}
 
-.content.show {
-	opacity: 1;
-	transition: 1s;
-}
 
 .some-page-wrapper {
     display: flex;
-	padding-top: 15%;
-	opacity: 0;
-	transition: 1s;
+	  padding-top: 15%;
+	  opacity: 0;
+    transition: 1s;
+    margin-bottom: -50vw;;
   }
   
   .some-page-wrapper.show {
@@ -100,36 +93,19 @@ h1 {
     flex: 1;
   }
   
-  .orange-column {
-    margin-top: -25%;
-    margin-right: 5%;
-  }
-  
-  .blue-column {
-    margin-top: -25%;
-    margin-left: 5%;
-    margin-right: 10%;
-  }
-  
-  .green-column {
-    margin-top: -25%;
-    margin-right: 10%;
-  }
-
   .tl_1 {
     position: absolute;
     text-align: center;
     color: white;
     margin-left: 5%;
-    mix-blend-mode: difference;
     z-index: 30;
     font-size: 7vw;
     font-family: 'Helvetica', sans-serif;
     font-weight: 900;
     background-image: url(https://media.giphy.com/media/3o7TKoYwWhxyeh8kvu/giphy.gif);
-	background-size: cover;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	  background-size: cover;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
   }
 
   .parallax {
@@ -139,7 +115,8 @@ h1 {
 }
 
 p {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 500;
 }
 
 .textWithBlurredBg{
@@ -201,13 +178,35 @@ p {
   }
 
   .content2 {
-  position: absolute;
-  margin-top: -70%;
+  position: sticky;
+  top: 5%;
   opacity: 0;
   transition: 1s;
+  margin-bottom: 10%;
   }
 
   .content2.show {
   opacity: 1;
   transition: 1s;
+  }
+
+  .content {
+    position: static;
+   /* top: 5%;*/
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .content.show {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .columns_text {
+    font-weight: 900;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 4%;
+    margin-top: 7%;
   }
