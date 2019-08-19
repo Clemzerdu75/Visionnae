@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 	var scene4 = new ScrollMagic.Scene({
 		triggerElement: '.content2',
-		offset: wheight / 2.3,
+		offset: wheight / 2.5,
 	})
 	.setClassToggle('.content2', 'show')
 	.addTo(controller);
