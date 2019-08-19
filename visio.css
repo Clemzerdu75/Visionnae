@@ -212,16 +212,17 @@ p {
 /* --- SCROLLMAGIC CLASS --- */
 
 .some-page-wrapper {
+    position: absolute;
+    top: 50%;
+   /* transform: translateY(-30%);*/
     display: flex;
-    padding-top: 15%;
-    opacity: 0;
+    opacity: 1;
     transition: 1s;
     margin-bottom: -50vw;
-    ;
 }
 
 .some-page-wrapper.show {
-    padding-top: 5%;
+
     opacity: 1;
     transition: 1s;
 }
