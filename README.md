@@ -29,3 +29,9 @@ npm start
 __NB:__ if you haven't install node on your computer run: `brew install node`
 
 ## Gallery
+
+![Landing Demo](./src/img/forReadme/visioMain.gif)
+
+![Scroll Demo](./src/img/forReadme/visioScroll.gif)
+
+![Offres Demo](./src/img/forReadme/visioOffres.gif)
