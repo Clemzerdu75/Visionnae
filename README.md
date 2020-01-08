@@ -30,8 +30,14 @@ __NB:__ if you haven't install node on your computer run: `brew install node`
 
 ## Gallery
 
+### Main animation
+
 ![Landing Demo](./src/img/forReadme/visioMain.gif)
 
+### Sitemap & scroll behaviors
+
 ![Scroll Demo](./src/img/forReadme/visioScroll.gif)
+
+### Multiselect menu
 
 ![Offres Demo](./src/img/forReadme/visioOffres.gif)
